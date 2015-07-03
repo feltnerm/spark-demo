@@ -1,4 +1,3 @@
-apply from: "$rootDir/gradle/repositories.gradle"
 apply from: "$rootDir/gradle/dependencies.gradle"
 apply from: "$rootDir/gradle/artifacts.gradle"
 apply from: "$rootDir/gradle/avro.gradle"
@@ -9,9 +8,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 repositories {
-    maven { url repos.cloudera }
     mavenCentral()
-    mavenLocal()
 }
 
 dependencies {
