@@ -5,6 +5,9 @@ apply from: "$rootDir/gradle/avro.gradle"
 apply plugin: "idea"
 apply plugin: "eclipse"
 
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
 repositories {
     maven { url repos.cloudera }
     mavenCentral()
