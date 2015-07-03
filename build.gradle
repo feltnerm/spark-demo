@@ -49,9 +49,8 @@ test {
 
 // Gradle Wrapper Settings
 task wrapper(type: Wrapper) {
-    gradleVersion = "2.1"
+    gradleVersion = "2.4"
 }
-
 
 task runSpark(dependsOn: 'hadoopJar', type: JavaExec) {
     classpath = files(hadoopJar.archivePath, configurations.providedCompile)
