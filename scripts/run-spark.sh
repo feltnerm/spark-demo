@@ -11,7 +11,7 @@
 # note this is running on the spark cluster
 docker run --name spark --rm -it -p 8088:8088 -p 8042:8042 -v "$(pwd)j/build/libs/:/libs/" sequenceiq/spark:1.4.0 bash -c \
 'spark-submit
---class com.widen.tomservo.SparkPi
+--class com.feltnerm.sparkdemo.SparkPi
 --master yarn-client
 --driver-memory 1g
 --executor-memory 1

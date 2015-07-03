@@ -1,4 +1,4 @@
-{"namespace": "com.cloudera.sa.sessionize.avro",
+{"namespace": "com.feltnerm.sparkdemo.sessionize.avro",
     "type": "record",
     "name": "LogLine",
     "fields": [
