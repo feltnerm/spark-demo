@@ -7,6 +7,9 @@ apply plugin: "eclipse"
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+group = 'com.feltnerm'
+version = '1.0'
+
 repositories {
     mavenCentral()
 }
