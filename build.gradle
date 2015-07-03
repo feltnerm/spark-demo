@@ -20,31 +20,15 @@ dependencies {
         libs.parquetAvro,
         libs.commonsIO,
         libs.commonsLang,
-        libs.guava,
-        libs.slf4jLog4j,
-        libs.log4j,
-        libs.scalaWebSockets,
-        libs.kafkaTest,
-        libs.curatorTest
+        libs.guava
     ])
 
     providedCompile([
         libs.spark,
         libs.sparkMlLib,
         libs.sparkGraphX,
-        libs.sparkStreaming,
-        libs.sparkStreamingKafka
+        libs.sparkStreaming
     ])
-
-    testCompile([
-        libs.testNG
-    ])
-}
-
-// Configure Testing
-test {
-    useTestNG()
-    maxParallelForks = 8
 }
 
 // Gradle Wrapper Settings
